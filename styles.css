@@ -23,6 +23,7 @@ html {
   top: 0;
   left: 0;
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   background: rgba(0, 0, 0, 0.7);
 }
@@ -46,7 +47,7 @@ nav {
 
 .nav-links {
   display: flex;
-  width: 30%;
+  width: 300px;
   justify-content: space-between;
   list-style: none;
 }
