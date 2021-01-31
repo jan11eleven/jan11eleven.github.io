@@ -1,0 +1,12 @@
+:root {
+  /* font size */
+  --xl-font-size: 64px;
+  --l-font-size: 48px;
+  --m-font-size: 24px;
+  --s-font-size: 16px;
+  /* colors */
+  --primary-color: #46a0f5;
+  --dark-primary-color: #164775;
+  --secondary-color: #f5685f;
+  --dark-bg-color: rgb(41, 41, 41);
+}

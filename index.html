@@ -12,13 +12,14 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <title>My Website</title>
+    <link rel="stylesheet" href="css/vars.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>Portfolio</title>
   </head>
   <body>
     <header>
       <nav>
-        <h1 class="nav-logo">JE</h1>
         <ul class="nav-links">
           <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#" class="nav-link">About</a></li>
@@ -34,5 +35,13 @@
         <a href="#" class="learn-btn">Learn more about me</a>
       </div>
     </div>
+    <div class="about-container"></div>
   </body>
+  <script>
+    window.addEventListener("scroll", () => {
+      document
+        .querySelector("header")
+        .classList.toggle("sticky", window.scrollY > 0);
+    });
+  </script>
 </html>
