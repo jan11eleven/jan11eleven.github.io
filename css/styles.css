@@ -6,6 +6,7 @@
 
 html {
   font-family: "Raleway", sans-serif;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -51,6 +52,7 @@ nav {
   min-height: 600px;
   width: 100%;
   background-image: url("/img/bg.jpg");
+  /* Photo by Dominika Roseclay from Pexels */
   background-size: cover;
   position: relative;
   display: flex;
