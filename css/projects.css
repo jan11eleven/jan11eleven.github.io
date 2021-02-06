@@ -1,0 +1,101 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(245, 245, 245);
+}
+
+.projects-title-container {
+  margin: 30px 0;
+  padding: 10px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-title {
+  font-size: var(--xm-font-size);
+  margin: auto;
+  color: var(--dark-color);
+}
+
+.projects-title::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 5px;
+  top: -10px;
+  left: 20px;
+  background: var(--secondary-color);
+  transform: rotate(25deg);
+}
+
+.projects-title::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 5px;
+  top: -10px;
+  right: 20px;
+  background: var(--secondary-color);
+  transform: rotate(25deg);
+}
+
+/* projects */
+.projects-projects-container {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project-container {
+  height: 300px;
+  width: 33%;
+  min-width: 350px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-img {
+  height: 100%;
+  width: 100%;
+  background: url("../img/chat-up.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px 25px 0 0;
+}
+
+.project-img a {
+  display: none;
+  margin-right: 10px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  text-decoration: none;
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+.project-img:hover a {
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.project-img:hover {
+  background: var(--dark-bg-color);
+  transition: all 0.3s ease-out;
+}
+
+.project-name {
+  padding: 10px;
+  color: var(--secondary-color);
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  background: white;
+  border-radius: 0 0 25px 25px;
+}
