@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=
+      content="width=device-width
     , initial-scale=1.0"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&family=Raleway&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Volkhov:wght@400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/vars.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/projects.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
     <title>Portfolio</title>
   </head>
   <body>
@@ -39,7 +45,7 @@
     <div class="about-skills-container">
       <div class="about-container">
         <div class="about-title-container">
-          <h1 class="about-title">ABOUT ME</h1>
+          <h1 class="about-title">about me</h1>
         </div>
         <img src="img/Avatar.png" alt="" class="about-img" />
         <p class="about-desc">
@@ -64,7 +70,7 @@
       </div>
       <div class="skills-container">
         <div class="skills-title-container">
-          <h1 class="skills-title">SKILLS</h1>
+          <h1 class="skills-title">skills</h1>
         </div>
         <div class="skills-dev-graph-container">
           <div class="skills-dev-container">
@@ -89,46 +95,99 @@
     </div>
     <div class="projects-container">
       <div class="projects-title-container">
-        <h1 class="projects-title">PROJECTS</h1>
+        <h1 class="projects-title">my projects</h1>
+      </div>
+      <div class="projects-desc">
+        <p>
+          Here are my recent projects. You can freely visit them or make a pull
+          request on my github.
+        </p>
       </div>
       <div class="projects-projects-container">
         <div class="project-container">
-          <div class="project-img">
+          <div class="project-img img-1">
             <a href="#">Visit App</a>
             <a href="#">View Github</a>
           </div>
-          <div class="project-name">Project 1</div>
         </div>
         <div class="project-container">
-          <div class="project-img">
+          <div class="project-img img-2">
             <a href="#">Visit App</a>
             <a href="#">View Github</a>
           </div>
-          <div class="project-name">Project 2</div>
         </div>
         <div class="project-container">
-          <div class="project-img">
+          <div class="project-img img-3">
             <a href="#">Visit App</a>
             <a href="#">View Github</a>
           </div>
-          <div class="project-name">Project 3</div>
         </div>
         <div class="project-container">
-          <div class="project-img">
+          <div class="project-img img-4">
             <a href="#">Visit App</a>
             <a href="#">View Github</a>
           </div>
-          <div class="project-name">Project 4</div>
         </div>
       </div>
     </div>
-    <div class="contacts-container"></div>
+    <div class="contacts-container">
+      <div class="contacts-address-container">
+        <p>
+          #114<br />
+          Malaya St.<br />
+          Malanday, Marikina City <br />
+          Philippines
+        </p>
+
+        <div>
+          <p>
+            +639499443203<br />
+            janelevensalvador25@gmail.com
+          </p>
+
+          <div class="address-icons-container">
+            <img src="img/icon_facebook.png" alt="" />
+            <img src="img/icon_github.png" alt="" />
+            <img src="img/icon_twitter.png" alt="" />
+            <img src="img/icon_LinkedIn.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="contacts-send-email-container">
+        <form
+          action="mailto:janelevensalvador25@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <h1 class="send-email-title">send me email</h1>
+          <div class="send-email-inputs">
+            <input
+              class="send-email-input"
+              type="text"
+              name="name"
+              id=""
+              placeholder="your name"
+            />
+            <input
+              class="send-email-input"
+              type="mail"
+              name="email"
+              id=""
+              placeholder="your email"
+            />
+            <textarea
+              class="send-email-textarea"
+              name="message"
+              id=""
+              cols="30"
+              rows="4"
+              placeholder="your message"
+            ></textarea>
+          </div>
+          <button class="send-email-button">Done</button>
+        </form>
+      </div>
+    </div>
   </body>
-  <script>
-    window.addEventListener("scroll", () => {
-      document
-        .querySelector("header")
-        .classList.toggle("sticky", window.scrollY > 0);
-    });
-  </script>
+  <script src="js/app.js" defer></script>
 </html>
