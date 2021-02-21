@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="css/contacts.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      defer
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    <script src="js/app.js" defer></script>
     <title>Portfolio</title>
   </head>
   <body>
@@ -98,35 +104,28 @@
         <h1 class="projects-title">my projects</h1>
       </div>
       <div class="projects-desc">
-        <p>
-          Here are my recent projects. You can freely visit them or make a pull
-          request on my github.
-        </p>
+        <p>Projects I've worked on lately.</p>
       </div>
       <div class="projects-projects-container">
-        <div class="project-container">
-          <div class="project-img img-1">
-            <a href="#">Visit App</a>
-            <a href="#">View Github</a>
-          </div>
+        <div class="project-container" id="project-1">
+          <a href="#">Visit App</a>
+          <a href="#">View Github</a>
+          <div class="project-img img-1"></div>
         </div>
-        <div class="project-container">
-          <div class="project-img img-2">
-            <a href="#">Visit App</a>
-            <a href="#">View Github</a>
-          </div>
+        <div class="project-container" id="project-2">
+          <a href="#">Visit App</a>
+          <a href="#">View Github</a>
+          <div class="project-img img-2"></div>
         </div>
-        <div class="project-container">
-          <div class="project-img img-3">
-            <a href="#">Visit App</a>
-            <a href="#">View Github</a>
-          </div>
+        <div class="project-container" id="project-3">
+          <a href="#">Visit App</a>
+          <a href="#">View Github</a>
+          <div class="project-img img-3"></div>
         </div>
-        <div class="project-container">
-          <div class="project-img img-4">
-            <a href="#">Visit App</a>
-            <a href="#">View Github</a>
-          </div>
+        <div class="project-container" id="project-4">
+          <a href="#">Visit App</a>
+          <a href="#">View Github</a>
+          <div class="project-img img-4"></div>
         </div>
       </div>
     </div>
@@ -189,5 +188,4 @@
       </div>
     </div>
   </body>
-  <script src="js/app.js" defer></script>
 </html>

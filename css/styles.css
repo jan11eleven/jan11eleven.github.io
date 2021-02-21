@@ -90,13 +90,22 @@ nav {
   z-index: 1;
 }
 
+.title,
+.sub-title,
+.learn-btn {
+  position: relative;
+  opacity: 0;
+}
+
 .title {
   font-size: var(--l-font-size);
+  top: -150px;
 }
 
 .sub-title {
   font-size: var(--m-font-size);
   font-weight: lighter;
+  top: 150px;
 }
 
 .learn-btn {
