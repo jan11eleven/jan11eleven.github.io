@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.light-purple-text {
+  color: #6c63ff;
+  font-weight: bold;
+}
+
+/* landing page */
+.landing-page {
+  height: calc(100vh - 84px);
+  display: flex;
+  align-items: center;
+}
+
+.heading-text {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.hi {
+  font-size: 26px;
+}
+
+.aspiring {
+  font-size: 28px;
+}
+
+.btn-checkmeout {
+  margin-top: 20px;
+}
+/* skills page */
+.page-title {
+  font-family: "Fredoka One", cursive;
+  color: #36dda1;
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-dev {
+  margin-top: 50px;
+}
+
+.mobdev,
+.webdev {
+  margin-bottom: 20px;
+}
+
+.mobdev-img,
+.webdev-img {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.skill-title {
+  font-family: "Fredoka One", cursive;
+  color: #6c63ff;
+  margin-bottom: 20px;
+}
+
+/* contacts */
+.marker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* media query */
+
+@media only screen and (max-width: 850px) {
+  .hi {
+    font-size: 22px;
+  }
+
+  .aspiring {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hi {
+    font-size: 20px;
+  }
+
+  .aspiring {
+    font-size: 20px;
+  }
+  .heading-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page-title {
+    font-size: 26px;
+  }
+  .desc-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .skill-title {
+    font-size: 18px;
+  }
+
+  .heading-text {
+    text-align: center;
+  }
+}
+
+.show-nav {
+  background: rgba(0, 0, 0, 0);
+}
+
+.hide-nav {
+  background: rgba(0, 0, 0, 0);
+  transform: scaleY(0);
+}
+
+nav {
+  transition: 0.3s;
+  transform-origin: top;
+}
