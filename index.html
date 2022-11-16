@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Jan Eleven</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" type="image/png" href="imgs/tab_icon.png" />
-    <!-- Compiled and minified CSS -->
+    <!-- MaterializeCSS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
@@ -16,127 +16,212 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Lexend&display=swap"
+      rel="stylesheet"
+    />
     <script
-      src="https://kit.fontawesome.com/6a79530112.js"
+      src="https://kit.fontawesome.com/7d5d2a5042.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- nav bar -->
-    <div class="navbar-fixed">
-      <nav class="z-depth-0">
-        <div class="nav-wrapper white">
-          <div class="container">
-            <a href="#home" class="brand-logo"
-              ><img src="imgs/my_logo.png" alt="" srcset="" height="26px"
-            /></a>
-            <a
-              href="#"
-              data-target="mobile-demo"
-              class="right sidenav-trigger deep-purple-text accent-2"
-              ><i class="material-icons" style="font-size: 35px">menu</i></a
-            >
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#home" class="black-text">Home</a></li>
-              <li><a href="#skills" class="black-text">About me</a></li>
-              <li>
-                <a href="#projects" class="black-text">Projects</a>
-              </li>
-              <li><a href="#contactme" class="black-text">Contacts</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- hamburger bar -->
-    <ul class="sidenav deep-purple accent-2" id="mobile-demo">
-      <li><a href="#home" class="white-text">Home</a></li>
-      <li><a href="#skills" class="white-text">About me</a></li>
-      <li>
-        <a href="#projects" class="white-text">Projects</a>
-      </li>
-      <li><a href="#contactme" class="white-text">Contacts</a></li>
-    </ul>
-    <!-- home page -->
-    <div class="container" id="home">
-      <div class="row landing-page">
-        <div class="col s12 m8 l7 heading-page">
-          <p class="heading-text">
-            <span class="hi"
-              >Hi, I'm
-              <span class="bold-text deep-purple-text accent-2"
-                >Jan Eleven</span
-              >
-            </span>
-            <br />
-            <span class="aspiring"
-              >A
-              <span class="bold-text deep-purple-text accent-2"
-                >Software Engineer.</span
-              >
-            </span>
-          </p>
-          <p class="desc-text">
-            I am a fresh graduate from PUP Institute of Technology with a course
-            of Diploma in Information and Communication Technology. I am
-            proficient in the modern technology that is used to develop our
-            modern application.
-          </p>
+    <nav
+      class="relative z-50 flex py-3 px-1 sm:px-5 md:px-20 bg-white h-12"
+      style="box-shadow: none"
+    >
+      <div class="flex-1">
+        <div
+          class="flex justify-center sm:justify-end gap-x-2 md:gap-x-8 sm:gap-x-4"
+        >
           <a
-            class="
-              waves-effect waves-light
-              btn-large
-              deep-purple
-              accent-2
-              btn-checkmeout
-            "
-            href="#skills"
-            ><i class="material-icons right">keyboard_arrow_down</i>Check me
-            out!</a
+            class="inline-block rounded-lg py-1 px-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+            href="/#about"
           >
+            About Me
+          </a>
+          <a
+            class="inline-block rounded-lg py-1 px-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+            href="/#projects"
+          >
+            Projects
+          </a>
+          <a
+            class="inline-block rounded-lg py-1 pl-1 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900"
+            href="/#contacts"
+          >
+            Contacts
+          </a>
         </div>
-        <div class="col s0 m4 l5">
+      </div>
+    </nav>
+    <!-- main -->
+    <div class="flex-col" id="about">
+      <!-- img -->
+      <div
+        class="flex flex-col sm:flex-row-reverse sm:items-center sm: justify-around"
+      >
+        <div class="flex justify-center mt-10">
           <img
-            class="responsive-img hide-on-small-only"
-            src="imgs/profile.png"
+            class="border-2 border-blue-600 object-contain h-48 sm:h-80 rounded-full"
+            src="imgs/profile2.jpg"
           />
         </div>
+        <!-- Hi I'm -->
+        <div
+          class="text-center sm:text-left mt-10 text-3xl sm:text-4xl lexend-font text-slate-800"
+        >
+          Hi I'm Jan Eleven <br />
+          a <span class="myText text-blue-600"></span>
+          <div
+            class="lexend-font text-center sm:text-left mt-2 mx-2 sm:mx-0 text-lg sm:text-2xl text-slate-700"
+          >
+            <span class="myText text-blue-600"></span>
+          </div>
+          <div class="flex mt-10 m-auto justify-center sm:justify-start">
+            <a
+              class="flex text-lg bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+              href="files/CV_JAN_ELEVEN_SALVADOR_16-11-22.pdf"
+              download
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m.75 12l3 3m0 0l3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+                />
+              </svg>
+              Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- short desc -->
+      <div class="text-center my-10 mx-5 sm:mx-20 text-lg text-slate-700">
+        My name is <span class="text-blue-600">Jan Eleven Salvador.</span> I'm a
+        Software Engineer with a 1-year of experience in Fintech Industry.
+        Programming is my passion. In general, I like problem-solving. It pushes
+        my mind to its limit and makes me overcome my limit. I enjoy how by
+        doing so, it also ables me to create cool and real world applications.
       </div>
     </div>
     <!-- skills -->
-    <h4 class="page-title center-align" id="skills">My Skills</h4>
-    <p class="center-align desc-text">
-      Here are the skills that I have developed through college and personal
-      learning experiences.
-    </p>
-    <div class="container skills-container">
-      <div class="row">
-        <div class="col s0 m1 l1"></div>
-        <div class="col s12 m10 l10">
-          <img class="responsive-img" src="imgs/myskills2.png" />
-        </div>
-        <div class="col s0 m1 l1"></div>
+    <div class="bg-gradient-to-r from-sky-500 to-indigo-500 py-5">
+      <div
+        class="lexend-font flex justify-center align-center mb-5 mx-2 text-2xl text-white text-slate-800 font-bold sm:text-3xl"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-8 h-8 mr-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"
+          />
+        </svg>
+        Skills
       </div>
-      <div class="row skills-dev">
-        <div class="col s0 m1 l1"></div>
-        <div class="col s12 m5 l5 webdev">
-          <img class="responsive-img webdev-img" src="imgs/webdev_pic.png" />
-          <h5 class="skill-title center-align">Web Development</h5>
+      <div
+        class="flex flex-col sm:flex-row max-w-xs m-auto sm:m-auto sm:max-w-none sm:justify-center"
+      >
+        <div class="flex-1 rounded-lg border-2 m-4 p-2 max-w-xs">
+          <div class="text-white text-center text-lg font-bold lexend-font">
+            <i class="fa-solid fa-laptop-code"></i> Frontend
+          </div>
+          <div class="text-white text-center text-lg mt-4">
+            <span class="">
+              HTML <br />
+              CSS <br />
+              JavaScript <br />
+              Angularjs <br />
+              Reactjs <br />
+              Tailwindcss <br />
+              Bootstrap</span
+            >
+          </div>
         </div>
-        <div class="col s12 m5 l5 mobdev">
-          <img class="responsive-img mobdev-img" src="imgs/mobdev_pic.png" />
-          <h5 class="skill-title center-align">Mobile Development</h5>
+
+        <div class="flex-1 rounded-lg border-2 m-4 p-2 max-w-xs">
+          <div class="text-white text-center text-lg font-bold lexend-font">
+            <i class="fa-solid fa-network-wired"></i> Backend
+          </div>
+          <div class="text-white text-center text-lg mt-4">
+            <span class=""
+              >Java <br />Spring Boot <br />
+              Nodejs <br />
+              MySQL</span
+            >
+          </div>
         </div>
-        <div class="col s0 m1 l1"></div>
+
+        <div class="flex-1 rounded-lg border-2 m-4 p-2 max-w-xs">
+          <div class="text-white text-center text-lg font-bold lexend-font">
+            <i class="fa-solid fa-gears"></i> Others
+          </div>
+          <div class="text-white text-center text-lg mt-4">
+            <span class=""
+              >Android Studio <br />
+              AWS <br />
+              Git <br />
+              Github</span
+            >
+          </div>
+        </div>
       </div>
     </div>
-    <!-- my projects -->
-    <h4 class="page-title center-align" id="projects">My Projects</h4>
-    <p class="center-align desc-text">
-      Mobile & Web Projects I've made on school and for skills improvement.
-    </p>
-    <div class="container">
+    <!-- Projects -->
+    <div
+      class="lexend-font flex justify-center align-center my-5 mx-2 text-2xl text-blue-600 text-slate-800 font-bold sm:text-3xl"
+      id="projects"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-8 h-8 mr-1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 00-1.883 2.542l.857 6a2.25 2.25 0 002.227 1.932H19.05a2.25 2.25 0 002.227-1.932l.857-6a2.25 2.25 0 00-1.883-2.542m-16.5 0V6A2.25 2.25 0 016 3.75h3.879a1.5 1.5 0 011.06.44l2.122 2.12a1.5 1.5 0 001.06.44H18A2.25 2.25 0 0120.25 9v.776"
+        />
+      </svg>
+
+      My Projects
+    </div>
+    <div class="container mt-10">
       <div class="row">
         <div class="col s12 m6 l6">
           <div class="card">
@@ -270,44 +355,6 @@
         <div class="col s12 m6 l6">
           <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="imgs/weather.png" />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4"
-                >Weather App<i class="material-icons right">more_vert</i></span
-              >
-              <p>
-                <a
-                  target="_blank"
-                  href="https://github.com/jan11eleven/weather-app"
-                  >Visit Github Repo</a
-                >
-                /
-                <a
-                  target="_blank"
-                  href="https://onse-weather-application.herokuapp.com/"
-                  >Visit Website</a
-                >
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"
-                >Weather App<i class="material-icons right">close</i></span
-              >
-              <p>
-                This project will give you the current weather forecast on your
-                desired place. This was developed using HTML, CSS, JavaScript,
-                Nodejs, and Weather Stack API. I made this project to enhance my
-                knowledge on using API's.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 m6 l6">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="imgs/yugioh.png" />
             </div>
             <div class="card-content">
@@ -347,30 +394,29 @@
         </div>
       </div>
     </div>
-
     <!-- contacts -->
-    <h4 class="page-title center-align" id="contactme">Contact Me</h4>
-    <p class="center-align desc-text">
-      Reach me out using my contact address and social media accounts!
-    </p>
+    <div
+      class="lexend-font flex justify-center align-center my-5 mx-2 text-2xl text-blue-600 text-slate-800 font-bold sm:text-3xl"
+      id="contacts"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-8 h-8 mr-1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+        />
+      </svg>
 
-    <div class="container">
-      <div class="row">
-        <div class="col s0 m1 l1"></div>
-        <div class="col s12 m5 l5">
-          <div class="marker-container">
-            <i class="material-icons medium deep-purple-text accent-2">call</i>
-            <p class="desc-text">09499443203</p>
-          </div>
-        </div>
-        <div class="col s12 m5 l5">
-          <div class="marker-container">
-            <i class="fas fa-map-marker medium deep-purple-text accent-2"></i>
-            <p class="desc-text">Malanday, Marikina City</p>
-          </div>
-        </div>
-        <div class="col s0 m1 l1"></div>
-      </div>
+      Contact Me
+    </div>
+    <div class="container mt-10">
       <div class="row">
         <div class="col s2 m2 l2"></div>
         <div class="col s2 m2 l2">
@@ -379,7 +425,7 @@
               href="https://www.facebook.com/janeleven.salvador/"
               target="_blank"
             >
-              <i class="fab fa-facebook deep-purple-text accent-2 small"></i>
+              <i class="fab fa-facebook text-blue-600 accent-2 small"></i>
             </a>
           </div>
         </div>
@@ -389,14 +435,14 @@
               href="https://www.linkedin.com/in/jan-eleven-salvador-7b7b5a205/"
               target="_blank"
             >
-              <i class="fab fa-linkedin deep-purple-text accent-2 small"></i>
+              <i class="fab fa-linkedin text-blue-600 accent-2 small"></i>
             </a>
           </div>
         </div>
         <div class="col s2 m2 l2">
           <div class="marker-container">
             <a href="https://github.com/jan11eleven" target="_blank">
-              <i class="fab fa-github deep-purple-text accent-2 small"></i>
+              <i class="fab fa-github text-blue-600 accent-2 small"></i>
             </a>
           </div>
         </div>
@@ -406,21 +452,14 @@
               href="https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=app"
               target="_blank"
             >
-              <i class="fab fa-google deep-purple-text accent-2 small"></i>
+              <i class="fab fa-google text-blue-600 accent-2 small"></i>
             </a>
           </div>
         </div>
         <div class="col s2 m2 l2"></div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

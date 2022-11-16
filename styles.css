@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.lexend-font {
+  font-family: 'Lexend', sans-serif;
 }
 
 .light-purple-text {
@@ -42,7 +46,7 @@ body {
 }
 /* skills page */
 .page-title {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   color: #36dda1;
   margin-bottom: 30px;
 }
@@ -70,7 +74,7 @@ body {
 }
 
 .skill-title {
-  font-family: "Fredoka One", cursive;
+  font-family: 'Fredoka One', cursive;
   color: #6c63ff;
   margin-bottom: 20px;
 }
